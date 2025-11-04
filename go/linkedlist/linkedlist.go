@@ -1,3 +1,5 @@
+// Package linkedlist
+// core utitities for linkedlist functionalities
 package linkedlist
 
 import (
@@ -46,7 +48,7 @@ func (l *linkedList) Populate(size int) {
 }
 
 func (l *linkedList) DisplayWithLoop() {
-	//temporary iterator
+	// temporary iterator
 	head := l.head
 	for head != nil {
 		fmt.Printf("%d->", head.value)
@@ -63,7 +65,6 @@ func (l *linkedList) DisplayWithIterator() {
 }
 
 func (l *linkedList) AppendNode(value int) {
-
 	if l.head == nil {
 		l.head = &node{value, nil}
 		l.size++
