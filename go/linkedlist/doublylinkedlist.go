@@ -3,9 +3,9 @@ package linkedlist
 type dllNode struct {
 	value int
 	next  *dllNode
+	prev  *dllNode
 }
 
-// TODO hellow mein hu
 type dLinkedList struct {
 	head *dllNode
 	size int
@@ -15,4 +15,10 @@ func NewDlinkedlist() *dLinkedList {
 	return &dLinkedList{nil, 0}
 }
 
-// TODO:  implement doubly linked list functionalities
+// TODO: Display
+// TODO: Reverse
+// TODO: Append
+// TODO: Insert
+// TODO: Add at position
+// TODO: Delete Root
+// TODO: Delete at position
